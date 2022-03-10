@@ -18,6 +18,9 @@ div.my-thumbnails{
     min-height: 160px;
     display: flex;
 }
+div.my-thumbnails img{
+    height: 100%;
+}
 
 div.my-previous,
 div.my-next{

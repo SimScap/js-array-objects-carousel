@@ -32,7 +32,7 @@ const immages = [
     title:'riccardo dab',
 },
 {
-    image:'riky4.jpg',
+    image:'riky5.jpg',
     title:'riccardo ok',
 },
 {
@@ -49,8 +49,12 @@ const immages = [
     for( let i=0; i < immages.length; i++){
         let newDiv = document.createElement('div');
         newDiv.classList.add('card'); 
+        let newImg = document.createElement('img');
+        newImg.classList.add('img-fluid');
+        newImg.src= "img/"+immages[i].image;
         
         cardContainer.append(newDiv);
+        newDiv.appendChild(newImg);
     }
     
 
