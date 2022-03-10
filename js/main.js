@@ -33,7 +33,7 @@ const immages = [
 },
 {
     image:'riky5.jpg',
-    title:'riccardo ok',
+    title:'riccardo comunista/o',
 },
 {
     image:'andreotti.png',
@@ -43,7 +43,7 @@ const immages = [
 
 //for (let i = 0; i < immages.length; i++) {
 //  console.log(immages[i]);}
-
+    const carouselContainer = document.querySelector(".my-carousel-images");
     const cardContainer = document.querySelector('.my-thumbnails');
 
     for( let i=0; i < immages.length; i++){
@@ -52,9 +52,13 @@ const immages = [
         let newImg = document.createElement('img');
         newImg.classList.add('img-fluid');
         newImg.src= "img/"+immages[i].image;
-        
         cardContainer.append(newDiv);
         newDiv.appendChild(newImg);
+
+        carouselContainer.innerHTML = ` <div class="my-thumbnails">
+        <img class="w-100" src="./img/${immages[i].image}" alt="Thumbnail of ${immages[i].title} picture">
+    </div>`;
+
     }
     
 
@@ -74,6 +78,6 @@ const immages = [
         image.classList.add("img-fluid");
     })
      */
-
+    
 
 
