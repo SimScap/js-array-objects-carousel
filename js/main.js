@@ -16,3 +16,24 @@ E se volessi un bottone per invertire la "direzione" del carosello?
 
  *
  */
+
+const immage = [
+{
+    Image:'riky1.jpeg'
+},
+{   
+    Image:'riky2.jpg'
+},
+{
+    image:'riky3.jpg'
+},
+{
+    image:'riky4.jpg'
+},
+{
+    image:'andreotti.png'
+},
+];
+
+for (let i = 0; i < immage.length; i++) {
+    console.log(immage[i]);}
