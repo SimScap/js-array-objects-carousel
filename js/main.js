@@ -17,23 +17,59 @@ E se volessi un bottone per invertire la "direzione" del carosello?
  *
  */
 
-const immage = [
+const immages = [
 {
-    Image:'riky1.jpeg'
+    image:'riky1.jpeg',
+    title:'meglio non commentare'
+    
 },
 {   
-    Image:'riky2.jpg'
+    image:'riky2.jpg',
+    title:'inneggiamenti',
 },
 {
-    image:'riky3.jpg'
+    image:'riky3.jpg',
+    title:'riccardo dab',
 },
 {
-    image:'riky4.jpg'
+    image:'riky4.jpg',
+    title:'riccardo ok',
 },
 {
-    image:'andreotti.png'
+    image:'andreotti.png',
+    title:'in memory of'
 },
 ];
 
-for (let i = 0; i < immage.length; i++) {
-    console.log(immage[i]);}
+//for (let i = 0; i < immages.length; i++) {
+//  console.log(immages[i]);}
+
+    const cardContainer = document.querySelector('.my-thumbnails');
+
+    for( let i=0; i < immages.length; i++){
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('card'); 
+        
+        cardContainer.append(newDiv);
+    }
+    
+
+    /*
+        let indice = 0;
+    document.querySelector('span .my-next-hook').addEventListener("click",function(){
+        indice++
+        let background = document.querySelector('div .my-carousel-images');
+        background.style.backgroundImage= `url('${immages[i].image}')`; 
+        console.log();
+
+
+
+        const image = document.createElement("img");
+        image.src = immages[i];
+        document.querySelector("" +(i+1)).appendChild(image); 
+        image.classList.add("img-fluid");
+    })
+     */
+
+
+

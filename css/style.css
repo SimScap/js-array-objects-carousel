@@ -16,6 +16,7 @@ div.my-carousel-images{
 div.my-thumbnails{
     background-color: violet;
     min-height: 160px;
+    display: flex;
 }
 
 div.my-previous,
@@ -51,4 +52,9 @@ div.my-next > span::after{
     font-weight: 900;
     content: "\f520";
     line-height: 30px;
+}
+
+.card{   
+    width: calc(100% / 5 );  
+    border:2px solid gold;
 }
