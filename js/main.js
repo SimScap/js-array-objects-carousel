@@ -54,30 +54,16 @@ const immages = [
         newImg.src= "img/"+immages[i].image;
         cardContainer.append(newDiv);
         newDiv.appendChild(newImg);
-
         carouselContainer.innerHTML = ` <div class="my-thumbnails">
         <img class="w-100" src="./img/${immages[i].image}" alt="Thumbnail of ${immages[i].title} picture">
+        <h1>${immages[i].title}</h1>
     </div>`;
-
     }
-    
 
-    /*
         let indice = 0;
-    document.querySelector('span .my-next-hook').addEventListener("click",function(){
-        indice++
-        let background = document.querySelector('div .my-carousel-images');
-        background.style.backgroundImage= `url('${immages[i].image}')`; 
-        console.log();
-
-
-
-        const image = document.createElement("img");
-        image.src = immages[i];
-        document.querySelector("" +(i+1)).appendChild(image); 
-        image.classList.add("img-fluid");
-    })
-     */
+        document.querySelector('.my-next-hook').addEventListener("click",function(){
+        indice++ 
+    })    
     
 
 
